@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: hsl(0, 0%, 96%); /* #F4F4F4 */
+  --color-fg: hsl(0, 0%, 14%); /* #242424 */
+  --color-base: hsl(0, 0%, 100%); /* #FFFFFF */
+
+  --color-accent-blue: hsl(220, 90%, 56%); /* #1E90FF */
+  --color-accent-green: hsl(145, 63%, 42%); /* #28A745 */
+  --color-accent-purple: hsl(265, 70%, 60%); /* #9B5DE5 */
+  --color-accent-orange: hsl(25, 85%, 55%); /* #FF8C42 */
+  --color-accent-red: hsl(0, 72%, 50%); /* #E63946 */
+  --color-accent-teal: hsl(180, 65%, 40%); /* #20B2AA */
+}
+
+.dark {
+  --color-bg: hsl(0, 0%, 14%); /* #242424 */
+  --color-fg: hsl(0, 0%, 96%); /* #F4F4F4 */
+  --color-base: hsl(0, 0%, 0%); /* black */
+
+  --color-accent-blue: hsl(220, 100%, 70%); /* lighter blue */
+  --color-accent-green: hsl(145, 55%, 60%); /* softer green */
+  --color-accent-purple: hsl(265, 65%, 70%); /* pastel purple */
+  --color-accent-orange: hsl(25, 85%, 65%); /* softer orange */
+  --color-accent-red: hsl(0, 70%, 65%); /* softer red */
+  --color-accent-teal: hsl(180, 60%, 55%); /* lighter teal */
+}
