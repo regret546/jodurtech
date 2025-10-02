@@ -19,10 +19,16 @@
   --color-fg: hsl(0, 0%, 96%); /* #F4F4F4 */
   --color-base: hsl(0, 0%, 0%); /* black */
 
-  --color-accent-blue: hsl(220, 100%, 70%); /* lighter blue */
-  --color-accent-green: hsl(145, 55%, 60%); /* softer green */
-  --color-accent-purple: hsl(265, 65%, 70%); /* pastel purple */
-  --color-accent-orange: hsl(25, 85%, 65%); /* softer orange */
-  --color-accent-red: hsl(0, 70%, 65%); /* softer red */
-  --color-accent-teal: hsl(180, 60%, 55%); /* lighter teal */
+  --color-accent-blue: hsl(220, 100%, 70%);
+  --color-accent-teal: hsl(180, 60%, 55%);
+  --color-accent-purple: hsl(265, 65%, 70%);
+  --color-accent-orange: hsl(25, 85%, 65%);
+  --color-accent-red: hsl(0, 70%, 65%);
+  --color-accent-green: hsl(145, 55%, 60%);
+}
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.1em;
+  }
 }

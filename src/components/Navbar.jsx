@@ -215,7 +215,7 @@ const NavBar = () => {
               onClick={() => setMobileOpen(false)}
             >
               <span className="fa-solid fa-arrow-right mr-2"></span>
-              {item.toUpperCase()}
+              {item.label.toUpperCase()}
             </motion.li>
           ))}
         </motion.ul>
