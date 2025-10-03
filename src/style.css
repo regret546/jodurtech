@@ -31,4 +31,10 @@
     font-family: "Inter", sans-serif;
     letter-spacing: 0.1em;
   }
+
+  .Skills {
+    li {
+      @apply p-1.5 bg-accent-blue/50 rounded-full font-medium;
+    }
+  }
 }

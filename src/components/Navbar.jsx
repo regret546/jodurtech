@@ -22,7 +22,7 @@ const Cursor = ({ position }) => {
   return (
     <motion.li
       animate={position}
-      className={`absolute top-1/2 left-1 -translate-y-1/2 z-0 h-[85%] rounded-full ${position.color}`}
+      className={`absolute top-1/2 left-1 -translate-y-1/2 z-10 h-[85%] rounded-full ${position.color}`}
     />
   );
 };
@@ -134,7 +134,7 @@ const NavBar = () => {
 
   return (
     <motion.div
-      className={`sticky top-0 grid md:justify-center bg-base transition-all duration-300  ${
+      className={`sticky top-0 grid md:justify-center z-10 bg-base transition-all duration-300  ${
         scrolled ? "shadow-[-1px_7px_0px_-2px_rgba(0,_0,_0,_0.1)] p-3" : "p-2"
       }`}
     >
@@ -170,7 +170,7 @@ const NavBar = () => {
                   });
                   console.log(position);
                 }}
-                className="cursor-pointer relative tracking-wider font-medium z-10 text-black "
+                className="cursor-pointer relative tracking-wider font-medium z-20 text-black "
                 key={item.label}
               >
                 {item.label.toUpperCase()}

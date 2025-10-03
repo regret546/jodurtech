@@ -40,8 +40,8 @@ function ContactMeBtn() {
 
         <motion.span
           variants={{
-            rest: { opacity: 0, left: 150 },
-            hover: { opacity: 1, right: 10, color: "#1E90FF" },
+            rest: { opacity: 0, right: 0 },
+            hover: { opacity: 1, right: 20, color: "#1E90FF" },
           }}
           className="fa-solid fa-arrow-right absolute text-[0.9rem]"
         ></motion.span>

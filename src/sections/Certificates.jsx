@@ -1,5 +1,5 @@
-import { easeInOut, motion, spring } from "motion/react";
-import React from "react";
+import { motion } from "motion/react";
+import HeaderLine from "../components/UI/HeaderLine";
 
 import fundamentalsBadge from "../assets/microsoft-badge/microsoft-certified-fundamentals-badge.svg";
 import associateBadge from "../assets/microsoft-badge/microsoft-certified-associate-badge.svg";
@@ -34,18 +34,19 @@ function Certificates() {
     },
   ];
   return (
-    <div className="grid w-[60%] mt-[10rem] justify-center gap-6 ">
-      <h2 className="text-center text-4xl font-bold text-fg  ">
-        My Certificates
+    <div className=" w-[60%] mt-[4rem]  ">
+      <h2 className="font-extrabold text-[3.5rem] flex w-full items-center text-accent-blue">
+        Certificates.
+        <HeaderLine color="accent-blue" />
       </h2>
-      <ul className="flex gap-4">
+      <ul className="flex justify-center gap-4 mt-[2rem]">
         {certificates.map((item) => (
           <li key={item.title} className="grid justify-items-center gap-2">
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               <motion.img
                 src={item.image}
                 alt={item.title}
-                className="w-24 h-24 transition-transform duration-200"
+                className="w-24 h-24 transition-transform duration-200 "
                 whileHover={{
                   scale: 1.2,
                   rotate: "-2.5deg",
