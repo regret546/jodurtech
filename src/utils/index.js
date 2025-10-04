@@ -1,0 +1,1 @@
+export { truncateWords } from "./truncateWords";

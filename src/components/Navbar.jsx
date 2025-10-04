@@ -135,7 +135,9 @@ const NavBar = () => {
   return (
     <motion.div
       className={`sticky top-0 grid md:justify-center z-10 bg-base transition-all duration-300  ${
-        scrolled ? "shadow-[-1px_7px_0px_-2px_rgba(0,_0,_0,_0.1)] p-3" : "p-2"
+        scrolled
+          ? "shadow-[-1px_7px_0px_-2px_rgba(0,_0,_0,_0.1)] p-3 backdrop-blur-md bg-base/70"
+          : "p-2"
       }`}
     >
       <div className="flex items-center justify-between max-w-full ">

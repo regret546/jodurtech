@@ -6,7 +6,7 @@ import { motion, MotionConfig } from "motion/react";
 function About() {
   return (
     <div className="w-[60%] mt-[4rem]">
-      <h2 className="font-extrabold text-[3.5rem] flex items-center text-accent-blue">
+      <h2 className="font-extrabold text-[3.5rem] mb-5 flex items-center text-accent-blue">
         About.
         <HeaderLine color="accent-blue" />
       </h2>
