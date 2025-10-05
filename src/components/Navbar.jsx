@@ -170,7 +170,6 @@ const NavBar = () => {
                     left: ref.current.offsetLeft - 10,
                     color: item.color,
                   });
-                  console.log(position);
                 }}
                 className="cursor-pointer relative tracking-wider font-medium z-20 text-black "
                 key={item.label}

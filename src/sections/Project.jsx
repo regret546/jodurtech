@@ -1,6 +1,8 @@
 import HeaderLine from "../components/UI/HeaderLine";
-import { motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 import { truncateWords } from "../utils";
+import { useState } from "react";
+import DragDrawer from "../components/UI/DragDrawer";
 
 const projectList = [
   {
@@ -9,7 +11,7 @@ const projectList = [
     githubUrl: "https://github.com/",
     techStack: ["FLutter", "MUI", "Python", "FastAPI"],
     description:
-      "Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku.",
+      "Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku. Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku. Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku. Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku. Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku. Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku.",
   },
   {
     name: "Todo App",
@@ -20,7 +22,7 @@ const projectList = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi adipisci odit delectus laudantium! Aperiam, ex vel ea doloremque velit saepe suscipit! Libero repellat, illo recusandae et omnis fugiat tempore expedita.",
   },
   {
-    name: "Paint.app",
+    name: "Paint1.app",
     image: "./src/assets/example-project.jpg",
     githubUrl: "https://github.com/",
     techStack: ["FLutter", "MUI", "Python", "FastAPI"],
@@ -28,7 +30,7 @@ const projectList = [
       "Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. The tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku.",
   },
   {
-    name: "Todo App",
+    name: "Todo1 App",
     image: "./src/assets/example-project.jpg",
     githubUrl: "https://github.com/",
     techStack: ["JavaScript", "Express", "MongoDB"],
@@ -47,6 +49,11 @@ const childVariants = {
 };
 
 function Project() {
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  {
+    console.log(open);
+  }
   return (
     <div className=" w-[60%] mt-[4rem] ">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex w-full items-center text-accent-blue">
@@ -81,13 +88,26 @@ function Project() {
               {project.techStack.join(" - ")}
             </div>
             <div className="appDescription">
-              {truncateWords(project.description, 15)}{" "}
-              <span className="text-accent-blue cursor-pointer">
+              {truncateWords(project.description, 10)}{" "}
+              <span
+                className="text-accent-blue cursor-pointer"
+                onClick={() => {
+                  setOpen(true);
+                  setSelectedProject(project);
+                }}
+              >
                 Learn more
               </span>
             </div>
           </div>
         ))}
+        {selectedProject && (
+          <DragDrawer
+            open={open}
+            setOpen={setOpen}
+            item={selectedProject}
+          ></DragDrawer>
+        )}
       </div>
     </div>
   );
