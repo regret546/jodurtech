@@ -72,7 +72,7 @@ function About() {
               Use at work:
             </p>
 
-            <ul className=" flex flex-wrap text-[0.8rem] gap-2 ">
+            <ul>
               <li>Windows Server</li>
               <li>Active Directory</li>
               <li>Group Policy</li>
@@ -92,7 +92,7 @@ function About() {
               Use for Fun:
             </p>
 
-            <ul className=" flex flex-wrap text-[0.8rem] gap-2 ">
+            <ul>
               <li>PHP</li>
               <li>MySQL</li>
               <li>MongoDB</li>

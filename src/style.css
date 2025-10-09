@@ -33,6 +33,24 @@
   }
 
   .Skills {
+    ul {
+      @apply flex flex-wrap text-[0.8rem] gap-2;
+    }
+  }
+
+  .Skills {
+    li {
+      @apply p-1.5 bg-accent-blue/50 rounded-full font-medium;
+    }
+  }
+
+  .Experience {
+    ul {
+      @apply flex flex-wrap text-[0.8rem] gap-2;
+    }
+  }
+
+  .Experience {
     li {
       @apply p-1.5 bg-accent-blue/50 rounded-full font-medium;
     }

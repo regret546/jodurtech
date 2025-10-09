@@ -73,7 +73,7 @@ function DragDrawer({ open, setOpen, item }) {
               top: 0,
               bottom: 0.5,
             }}
-            className="absolute bottom-0 h-[75vh] w-[700px] overflow-hidden  rounded-t-3xl bg-accent-blue"
+            className="absolute bottom-0 h-[80vh] w-[700px] overflow-hidden  rounded-t-3xl bg-accent-blue"
           >
             <div className="absolute left-0 right-0 top-0 z-10 flex justify-center border-e-accent-red p-4">
               <button
