@@ -5,6 +5,7 @@ import Certificates from "./sections/Certificates";
 import About from "./sections/About";
 import Project from "./sections/Project";
 import Experience from "./sections/Experience";
+import Contact from "./sections/Contact";
 
 import "./style.css";
 
@@ -19,6 +20,7 @@ function App() {
           <Project />
           <Certificates />
           <Experience />
+          <Contact />
         </div>
       </div>
     </>
