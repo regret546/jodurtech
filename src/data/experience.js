@@ -1,0 +1,63 @@
+const experienceList = [
+  {
+    company: "itm8",
+    period: "2023 - Present",
+    location: "Dumaguete City",
+    role: "Operation Specialist",
+    job: "As a System Operation Specialist at itm8, I am responsible for providing comprehensive IT infrastructure support, specializing in troubleshooting various technologies such as Windows Server, Citrix, Microsoft, Veeam, and Azure. My role involves handling and resolving cases within defined SLAs, coordinating with clients and internal teams during critical incidents, and ensuring system reliability through manual server patching or automated updates via SCCM. I also manage the deployment and troubleshooting of Azure resources and execute both scheduled and emergency operational tasks to maintain optimal system performance and uptime.",
+    skills: [
+      "Active Directory",
+      "DNS",
+      "DHCP",
+      "Virtualization (VMware / Hyper-V",
+      "Windows Server Administration",
+      "Citrix",
+      "Azure",
+      "PowerShell Scripting",
+      "Network",
+      "Backup",
+      "Office 365 Administration",
+    ],
+  },
+  {
+    company: "IT Relation A/S",
+    period: "2021-2023",
+    location: "Dumaguete City",
+    role: "Infrastructure Specialist",
+    job: "Responsible for maintaining and supporting enterprise IT infrastructure across multiple clients. Monitored system health and performance using tools such as SCOM, SysOrb, PRTG, Zabbix, Rapid7, and SolarWinds, ensuring timely detection and resolution of issues. Handled alerts, performed troubleshooting, and escalated critical incidents while maintaining compliance with SLA requirements.",
+    skills: [
+      "Infrastructure Monitoring & Management",
+      "System Administration",
+      "Microsoft Azure (Deployment & Troubleshooting)",
+      "Server Patching (Manual & via SCCM)",
+      "Incident & Alert Management",
+      "Microsoft SCOM (System Center Operations Manager)",
+      "SysOrb",
+      "PRTG Network Monitor",
+      "Zabbix",
+      "Rapid7",
+      "SolarWinds",
+    ],
+  },
+
+  {
+    company: "IT Relation A/S",
+    period: "2020-2021",
+    location: "Dumaguete City",
+    role: "Cloud Support Specialist",
+    job: "Responsible for maintaining, troubleshooting, and optimizing cloud-based systems and services. This role bridges technical support, system administration, and cloud infrastructure management to ensure that cloud environments run smoothly and securely.",
+    skills: [
+      "Cloud Infrastructure Support",
+      "Incident and Problem Management",
+      "User and Access Management",
+      "Monitoring and Optimization",
+      "Maintenance and Updates",
+      "Backup and Disaster Recovery",
+      "Security and Compliance",
+      "PRTG Network Monitor",
+      "Customer and Internal Support",
+    ],
+  },
+];
+
+export default experienceList;

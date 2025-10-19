@@ -1,49 +1,5 @@
-import React from "react";
+import experienceList from "../data/experience";
 import HeaderLine from "../components/UI/HeaderLine";
-import { li } from "motion/react-client";
-
-const experienceList = [
-  {
-    company: "itm8",
-    period: "2021-2022",
-    location: "Dumaguete City",
-    role: "Operation Specialist",
-    job: "As a System Operation Specialist at itm8, I am responsible for providing comprehensive IT infrastructure support, specializing in troubleshooting various technologies such as Windows Server, Citrix, Microsoft, Veeam, and Azure. My role involves handling and resolving cases within defined SLAs, coordinating with clients and internal teams during critical incidents, and ensuring system reliability through manual server patching or automated updates via SCCM. I also manage the deployment and troubleshooting of Azure resources and execute both scheduled and emergency operational tasks to maintain optimal system performance and uptime.",
-    skills: [
-      "Active Directory",
-      "DNS",
-      "DHCP",
-      "Virtualization (VMware / Hyper-V",
-      "Windows Server Administration",
-      "Citrix",
-      "Azure",
-      "PowerShell Scripting",
-      "Network",
-      "Backup",
-      "Office 365 Administration",
-    ],
-  },
-  {
-    company: "itm8",
-    period: "2021-2022",
-    location: "Dumaguete City",
-    role: "Operation Specialist",
-    job: "As a System Operation Specialist at itm8, I am responsible for providing comprehensive IT infrastructure support, specializing in troubleshooting various technologies such as Windows Server, Citrix, Microsoft, Veeam, and Azure. My role involves handling and resolving cases within defined SLAs, coordinating with clients and internal teams during critical incidents, and ensuring system reliability through manual server patching or automated updates via SCCM. I also manage the deployment and troubleshooting of Azure resources and execute both scheduled and emergency operational tasks to maintain optimal system performance and uptime.",
-    skills: [
-      "Active Directory",
-      "DNS",
-      "DHCP",
-      "Virtualization (VMware / Hyper-V",
-      "Windows Server Administration",
-      "Citrix",
-      "Azure",
-      "PowerShell Scripting",
-      "Network",
-      "Backup",
-      "Office 365 Administration",
-    ],
-  },
-];
 
 function Experience() {
   return (

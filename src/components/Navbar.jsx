@@ -8,12 +8,12 @@ import {
 } from "motion/react";
 
 const listItems = [
-  { label: "About", color: "bg-accent-blue" },
-  { label: "Skills", color: "bg-accent-green" },
-  { label: "Work", color: "bg-accent-purple" },
-  { label: "Certificates", color: "bg-accent-orange" },
-  { label: "Blog", color: "bg-accent-red" },
-  { label: "Contact", color: "bg-accent-teal" },
+  { label: "About" },
+  { label: "Skills" },
+  { label: "Work" },
+  { label: "Certificates" },
+  { label: "Blog" },
+  { label: "Contact" },
 ];
 
 const navBarColor = ["bg-accent"];
@@ -168,7 +168,7 @@ const NavBar = () => {
                     width: width + 20,
                     opacity: 1,
                     left: ref.current.offsetLeft - 10,
-                    color: item.color,
+                    color: "bg-accent-blue",
                   });
                 }}
                 className="cursor-pointer relative tracking-wider font-medium z-20 text-black "
