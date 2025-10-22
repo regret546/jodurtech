@@ -21,7 +21,7 @@ function Project() {
     console.log(open);
   }
   return (
-    <div className=" w-[60%] mt-[4rem] ">
+    <div className=" md:w-[60%] w-[80%] mt-[4rem] ">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex w-full items-center text-accent-blue">
         <HeaderLine color="accent-blue" />
         Project.

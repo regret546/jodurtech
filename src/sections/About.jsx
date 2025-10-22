@@ -5,13 +5,13 @@ import { motion, MotionConfig } from "motion/react";
 
 function About() {
   return (
-    <div className="w-[60%] mt-[4rem]">
+    <div className="md:w-[60%] w-[80%]  mt-[4rem]">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex items-center text-accent-blue">
         About.
         <HeaderLine color="accent-blue" />
       </h2>
       <div className="flex gap-4">
-        <div className="w-[60%] grid gap-4">
+        <div className="md:w-[60%] w-[80%] grid gap-4">
           <p>
             {" "}
             Hey! I’m John. By day I manage IT infrastructure, keep servers

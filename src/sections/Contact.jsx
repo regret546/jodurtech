@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className=" w-[60%]  mb-5 grid gap-4">
+    <div className=" md:w-[60%] w-[80%]  mb-5 grid gap-4">
       <h2 className="font-extrabold text-[3.5rem] text-center w-full text-accent-blue">
         Contact.
       </h2>

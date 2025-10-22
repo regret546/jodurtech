@@ -12,7 +12,7 @@ import "./style.css";
 function App() {
   return (
     <>
-      <div className=" h-[screen] w-[100%] bg-bg">
+      <div className=" h-[screen] w-full bg-bg">
         <NavBar />
         <div className="grid gap-4 justify-items-center">
           <Home />
