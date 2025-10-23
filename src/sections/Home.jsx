@@ -1,5 +1,4 @@
-import React from "react";
-import ContactMeBtn from "../components/UI/ContactMeBtn";
+import Button from "../components/UI/Button";
 
 function Home() {
   return (
@@ -33,7 +32,7 @@ function Home() {
           brings those worlds together, sharing my projects, ideas, and love for
           both IT and development.
         </p>
-        <ContactMeBtn />
+        <Button name={"Contact Me"} />
       </div>
     </div>
   );

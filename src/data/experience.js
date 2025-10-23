@@ -21,7 +21,7 @@ const experienceList = [
   },
   {
     company: "IT Relation A/S",
-    period: "2021-2023",
+    period: "2021 - 2023",
     location: "Dumaguete City",
     role: "Infrastructure Specialist",
     job: "Responsible for maintaining and supporting enterprise IT infrastructure across multiple clients. Monitored system health and performance using tools such as SCOM, SysOrb, PRTG, Zabbix, Rapid7, and SolarWinds, ensuring timely detection and resolution of issues. Handled alerts, performed troubleshooting, and escalated critical incidents while maintaining compliance with SLA requirements.",
@@ -42,7 +42,7 @@ const experienceList = [
 
   {
     company: "IT Relation A/S",
-    period: "2020-2021",
+    period: "2020 - 2021",
     location: "Dumaguete City",
     role: "Cloud Support Specialist",
     job: "Responsible for maintaining, troubleshooting, and optimizing cloud-based systems and services. This role bridges technical support, system administration, and cloud infrastructure management to ensure that cloud environments run smoothly and securely.",

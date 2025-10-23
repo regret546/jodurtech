@@ -34,7 +34,7 @@ function Certificates() {
     },
   ];
   return (
-    <div className=" md:w-[60%] w-[80%] mt-[4rem]  ">
+    <div className=" 2xl:w-[60%] 1xl:w-[80%] w-[95%]  mt-[4rem]  ">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex w-full items-center text-accent-blue">
         Certificates.
         <HeaderLine color="accent-blue" />

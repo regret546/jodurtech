@@ -1,11 +1,11 @@
-import { button } from "motion/react-client";
-import React from "react";
 import { motion, MotionConfig } from "motion/react";
+import { redirectLink } from "../../utils";
 
-function ContactMeBtn() {
+function Button({ name, url }) {
   return (
     <motion.button
       className="px-6 py-3 border border-black  flex items-center gap-3 font-bold w-[180px] relative cursor-pointer"
+      onClick={() => redirectLink()}
       initial="rest"
       whileHover="hover"
       animate="rest"
@@ -28,7 +28,7 @@ function ContactMeBtn() {
             hover: { scale: 1.1 },
           }}
         >
-          Contact Me
+          {name}
         </motion.span>
         <motion.span
           variants={{
@@ -50,4 +50,4 @@ function ContactMeBtn() {
   );
 }
 
-export default ContactMeBtn;
+export default Button;

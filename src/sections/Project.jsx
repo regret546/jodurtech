@@ -21,26 +21,26 @@ function Project() {
     console.log(open);
   }
   return (
-    <div className=" md:w-[60%] w-[80%] mt-[4rem] ">
+    <div className=" 2xl:w-[60%] 1xl:w-[80%] w-[95%] mt-[4rem] ">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex w-full items-center text-accent-blue">
         <HeaderLine color="accent-blue" />
         Project.
       </h2>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid 1xl:grid-cols-2 grid-cols-1  gap-4">
         {projectList.map((project) => (
-          <div key={project.name} className="grid gap-2">
+          <div key={project.name} className="grid gap-2 ">
             <motion.div
               variants={parentVariants}
               initial="initial"
               whileHover="hover"
-              className="p-[2.5rem] pb-0 bg-accent-blue overflow-hidden rounded-lg cursor-pointer"
+              className="1xl:p-[2rem] p-[1rem] pb-0 bg-accent-blue overflow-hidden rounded-lg cursor-pointer grid justify-items-center"
             >
               <motion.img
                 src={project.image}
                 alt={project.name}
                 variants={childVariants}
                 transition={{ duration: 0.125, ease: "easeInOut" }}
-                className="rounded-lg"
+                className="rounded-lg 1xl:-mb-[20%] -mb-[10%]"
               />
             </motion.div>
             <div className="appName">

@@ -1,17 +1,16 @@
-import { div } from "motion/react-client";
-import React from "react";
+import { redirectLink } from "../utils/redirectLink";
 import HeaderLine from "../components/UI/HeaderLine";
 import { motion, MotionConfig } from "motion/react";
 
 function About() {
   return (
-    <div className="md:w-[60%] w-[80%]  mt-[4rem]">
+    <div className="2xl:w-[60%] 1xl:w-[80%] w-[95%] mt-[4rem]">
       <h2 className="font-extrabold text-[3.5rem] mb-5 flex items-center text-accent-blue">
         About.
         <HeaderLine color="accent-blue" />
       </h2>
-      <div className="flex gap-4">
-        <div className="md:w-[60%] w-[80%] grid gap-4">
+      <div className="grid 1xl:flex gap-4 ">
+        <div className="1xl:w-[60%] w-[95%] grid gap-4">
           <p>
             {" "}
             Hey! I’m John. By day I manage IT infrastructure, keep servers
@@ -56,16 +55,22 @@ function About() {
 
               <motion.i
                 whileHover={{ scale: 1.5, color: "#1E90FF" }}
+                onClick={() => redirectLink("https://github.com/regret546")}
                 className="fa-brands fa-github text-2xl cursor-pointer mr-2"
               ></motion.i>
               <motion.i
                 whileHover={{ scale: 1.5, color: "#1E90FF" }}
+                onClick={() =>
+                  redirectLink(
+                    "https://www.linkedin.com/in/john-duran-495b24343/"
+                  )
+                }
                 className="fa-brands fa-linkedin text-2xl cursor-pointer"
               ></motion.i>
             </div>
           </MotionConfig>
         </div>
-        <div className="Skills w-[40%] grid ">
+        <div className="Skills 1xl:w-[40%] w-[95%] grid ">
           <div>
             <p className="font-extrabold  text-fg   mb-2">
               <span className="fa-solid fa-briefcase text-accent-blue mr-2"></span>

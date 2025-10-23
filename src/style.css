@@ -40,7 +40,7 @@
   }
   html,
   body {
-    @apply overflow-x-hidden w-full;
+    @apply w-full;
   }
 
   .Skills {

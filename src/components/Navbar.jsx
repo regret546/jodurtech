@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import DrawOutlineButton from "./UI/DrawOutlineButton";
 import {
   motion,
   MotionConfig,
@@ -6,13 +7,13 @@ import {
   useTransform,
   useMotionValueEvent,
 } from "motion/react";
+import { div } from "motion/react-client";
 
 const listItems = [
   { label: "About" },
   { label: "Skills" },
   { label: "Work" },
   { label: "Certificates" },
-  { label: "Blog" },
   { label: "Contact" },
 ];
 
@@ -39,7 +40,7 @@ const MenuButton = ({ active, setActive }) => {
         type="button"
         initial={false}
         onClick={() => setActive((pv) => !pv)}
-        className="relative h-15 w-15 rounded-full bg-black hover:bg-black/20 transition-colors duration-300"
+        className="relative h-15 w-15 rounded-full bg-accent-blue hover:bg-accent-blue/50 transition-colors duration-300"
         animate={active ? "open" : "close"}
       >
         {/* Top bar */}
@@ -134,10 +135,10 @@ const NavBar = () => {
 
   return (
     <motion.div
-      className={`sticky top-0 grid md:justify-center z-10 bg-base transition-all duration-300  ${
+      className={`sticky top-0 grid md:justify-center z-40 bg-base transition-all duration-300 border-b-0 border-accent-blue 1xl:border-none ${
         scrolled
-          ? "shadow-[-1px_7px_0px_-2px_rgba(0,_0,_0,_0.1)] p-3 backdrop-blur-md bg-base/70"
-          : "p-2"
+          ? "shadow-[-1px_7px_0px_-2px_rgba(0,_0,_0,_0.1)] backdrop-blur-md bg-base/70"
+          : ""
       }`}
     >
       <div className="flex items-center justify-between max-w-full ">
@@ -181,6 +182,7 @@ const NavBar = () => {
           <Cursor position={position} />
         </motion.ul>
 
+        {/*  <DrawOutlineButton>My resume</DrawOutlineButton> */}
         {/* Mobile button */}
         <div className="md:hidden relative min-w-full grid justify-end">
           <div className="">
@@ -188,19 +190,18 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile dropdown */}
       {mobileOpen && (
         <motion.ul
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="flex flex-col gap-4 p-4 mt-2 md:hidden border-2 bg-base rounded-lg"
+          className="flex flex-col gap-4 p-2  md:hidden border-2 border-accent-blue "
         >
           {listItems.map((item, index) => (
             <motion.li
               key={item}
-              className="cursor-pointer tracking-wider text-fg font-medium"
+              className="cursor-pointer tracking-wider text-blackfont-medium"
               initial={{
                 translateY: -10,
                 scale: 0,
